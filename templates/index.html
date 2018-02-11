@@ -1,0 +1,18 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}This is a template page{% endblock %}
+
+{% block content %}
+<div class="container">
+	<h1>Hello Bootstrap</h1>
+	{{ wtf.quick_form(form, button_map={'submit_button': 'primary'}) }}
+	<ol>
+		{% for idea in list_of_ideas %}
+			<li>{{ idea.idea_name }}</li>
+		{% else %}
+			<li>No Ideas Yet</li>
+		{% endfor %}
+	</ol>
+</div>
+{% endblock %}

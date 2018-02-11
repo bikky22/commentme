@@ -1,0 +1,15 @@
+click
+dominate
+Flask
+Flask-Bootstrap
+Flask-SQLAlchemy
+Flask-WTF
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+psycopg2
+SQLAlchemy
+visitor
+Werkzeug
+WTForms
